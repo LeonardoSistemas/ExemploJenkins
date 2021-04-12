@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  nginx:
+    build: 
+      dockerfile: ./dockerfile
+      context: .
+    image: leonardotreviso/exemplojenkinswithnode
+    container_name: container-1
+    ports: 
+        - "3000"
+    networks: 
+        - production-networks
+networks: 
+  production-networks:
+    driver: bridge
