@@ -1,5 +1,4 @@
 FROM node:latest
-MAINTAINER Leonardo Treviso
 ENV PORT=3000
 COPY . /VAR/WWW
 WORKDIR /VAR/WWW
